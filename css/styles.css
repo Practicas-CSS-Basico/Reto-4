@@ -17,5 +17,94 @@ Fuente de la página
 body {
   font-family: "Karla", sans-serif;
   background-color: #333;
+}
+
+.container {
+  position: relative;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+.container__top,
+.container__left,
+.container__right {
+  padding: 1em 2em;
+}
+
+.container__top {
+  height: 250px;
+}
+
+.container__left,
+.container__right {
+  position: absolute;
+  top: 250px;
+  width: 50%;
+  height: 250px;
+}
+
+.container__left {
+  left: 0;
+  background-color: hsl(179, 62%, 43%);
+}
+
+.container__right {
+  right: 0;
+  background-color: hsl(179 62% 43% / 0.8);
+}
+
+.text-white {
   color: #fff;
+}
+
+.text-cyan {
+  color: hsl(179, 62%, 43%);
+}
+
+.text-lime {
+  color: hsl(71, 73%, 54%);
+}
+
+.text-light-blue {
+  color: hsl(218, 22%, 67%);
+}
+
+.text-transparent {
+  color: hsl(0 0% 100% / 0.5);
+}
+
+.text-extra-big {
+  font-size: 2.5rem;
+}
+
+.text-big {
+  font-size: 2rem;
+}
+
+.text-medium {
+  font-size: 1.5rem;
+}
+
+.text-small {
+  font-size: 0.8rem;
+}
+
+.list {
+  padding-left: 0;
+  list-style: none;
+  font-weight: 200;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5em;
+  background-color: hsl(71, 73%, 54%);
+  box-shadow: 5px 5px 5px rgb(0 0 0 / 0.1);
 }
